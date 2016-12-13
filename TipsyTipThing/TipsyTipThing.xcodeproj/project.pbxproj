@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAAC9FE1E002BBB005B1E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAC9FD1E002BBB005B1E16 /* AppDelegate.swift */; };
+		CEAACA001E002BBB005B1E16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAC9FF1E002BBB005B1E16 /* ViewController.swift */; };
+		CEAACA031E002BBB005B1E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAACA011E002BBB005B1E16 /* Main.storyboard */; };
+		CEAACA051E002BBB005B1E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAACA041E002BBB005B1E16 /* Assets.xcassets */; };
+		CEAACA081E002BBB005B1E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAACA061E002BBB005B1E16 /* LaunchScreen.storyboard */; };
+		CEAACA121E003AAB005B1E16 /* TipCalcBrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAACA111E003AAB005B1E16 /* TipCalcBrains.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEAAC9FA1E002BBB005B1E16 /* TipsyTipThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipsyTipThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEAAC9FD1E002BBB005B1E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEAAC9FF1E002BBB005B1E16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEAACA021E002BBB005B1E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEAACA041E002BBB005B1E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEAACA071E002BBB005B1E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEAACA091E002BBB005B1E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAACA111E003AAB005B1E16 /* TipCalcBrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalcBrains.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEAAC9F71E002BBB005B1E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEAAC9F11E002BBB005B1E16 = {
+			isa = PBXGroup;
+			children = (
+				CEAAC9FC1E002BBB005B1E16 /* TipsyTipThing */,
+				CEAAC9FB1E002BBB005B1E16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAAC9FB1E002BBB005B1E16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAC9FA1E002BBB005B1E16 /* TipsyTipThing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEAAC9FC1E002BBB005B1E16 /* TipsyTipThing */ = {
+			isa = PBXGroup;
+			children = (
+				CEAACA101E003A85005B1E16 /* Controller */,
+				CEAACA0F1E003A74005B1E16 /* Model */,
+				CEAAC9FD1E002BBB005B1E16 /* AppDelegate.swift */,
+				CEAACA011E002BBB005B1E16 /* Main.storyboard */,
+				CEAACA041E002BBB005B1E16 /* Assets.xcassets */,
+				CEAACA061E002BBB005B1E16 /* LaunchScreen.storyboard */,
+				CEAACA091E002BBB005B1E16 /* Info.plist */,
+			);
+			path = TipsyTipThing;
+			sourceTree = "<group>";
+		};
+		CEAACA0F1E003A74005B1E16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEAACA111E003AAB005B1E16 /* TipCalcBrains.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEAACA101E003A85005B1E16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEAAC9FF1E002BBB005B1E16 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEAAC9F91E002BBB005B1E16 /* TipsyTipThing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEAACA0C1E002BBB005B1E16 /* Build configuration list for PBXNativeTarget "TipsyTipThing" */;
+			buildPhases = (
+				CEAAC9F61E002BBB005B1E16 /* Sources */,
+				CEAAC9F71E002BBB005B1E16 /* Frameworks */,
+				CEAAC9F81E002BBB005B1E16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipsyTipThing;
+			productName = TipsyTipThing;
+			productReference = CEAAC9FA1E002BBB005B1E16 /* TipsyTipThing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEAAC9F21E002BBB005B1E16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = davedailey;
+				TargetAttributes = {
+					CEAAC9F91E002BBB005B1E16 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CEAAC9F51E002BBB005B1E16 /* Build configuration list for PBXProject "TipsyTipThing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEAAC9F11E002BBB005B1E16;
+			productRefGroup = CEAAC9FB1E002BBB005B1E16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEAAC9F91E002BBB005B1E16 /* TipsyTipThing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEAAC9F81E002BBB005B1E16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAACA081E002BBB005B1E16 /* LaunchScreen.storyboard in Resources */,
+				CEAACA051E002BBB005B1E16 /* Assets.xcassets in Resources */,
+				CEAACA031E002BBB005B1E16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEAAC9F61E002BBB005B1E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAACA001E002BBB005B1E16 /* ViewController.swift in Sources */,
+				CEAAC9FE1E002BBB005B1E16 /* AppDelegate.swift in Sources */,
+				CEAACA121E003AAB005B1E16 /* TipCalcBrains.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEAACA011E002BBB005B1E16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAACA021E002BBB005B1E16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEAACA061E002BBB005B1E16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEAACA071E002BBB005B1E16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEAACA0A1E002BBB005B1E16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEAACA0B1E002BBB005B1E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEAACA0D1E002BBB005B1E16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TipsyTipThing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davedailey.TipsyTipThing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEAACA0E1E002BBB005B1E16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TipsyTipThing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davedailey.TipsyTipThing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEAAC9F51E002BBB005B1E16 /* Build configuration list for PBXProject "TipsyTipThing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAACA0A1E002BBB005B1E16 /* Debug */,
+				CEAACA0B1E002BBB005B1E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAACA0C1E002BBB005B1E16 /* Build configuration list for PBXNativeTarget "TipsyTipThing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAACA0D1E002BBB005B1E16 /* Debug */,
+				CEAACA0E1E002BBB005B1E16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEAAC9F21E002BBB005B1E16 /* Project object */;
+}
