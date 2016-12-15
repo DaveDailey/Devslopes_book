@@ -61,7 +61,7 @@ class TipCalcBrains {
     }
     
     
-    init(billAmount: Double, tipPercent: Double, numberOfPeople: Int) {
+   init(billAmount: Double, tipPercent: Double, numberOfPeople: Int) {
         self._billAmount = billAmount
         self._tipPercent = tipPercent
         self._numberOfPeople = numberOfPeople

@@ -21,50 +21,41 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //initialized new var of class TipCalcBrains with arbitrary values
     var tipCalcBrains = TipCalcBrains(billAmount: 25.00, tipPercent: 0.15, numberOfPeople: 1)
     
     @IBAction func billAmountChange(_ sender: Any) {
         calculateTip()
-        
     }
     
     @IBAction func tipPercentChange(_ sender: Any) {
-        tipPercentValue()
         calculateTip()
     }
     
     @IBAction func numberOfPeopleSlider(_ sender: Any) {
-        updateSplitUI()
+        calculateTip()
         
     }
 
-    
+    //does all the math to calc tip, then calc split, then updates UI
     func calculateTip() {
         tipCalcBrains.tipPercent = Double(floor(tipPercentageSlider.value*100)/100)
         tipCalcBrains.billAmount = ((enterBillTF.text)! as NSString).doubleValue
+        tipCalcBrains.numberOfPeople = Int(numberOfPeopleSlider.value)
         tipCalcBrains.calculateTip()
+        tipCalcBrains.calculateSplit()
         updateBillUI()
-        updateSplitUI()
     }
     
+    //updates all UI elements
     func updateBillUI() {
         totalAmount.text = String(format: "$%0.2f", tipCalcBrains.totalAmount)
         tipAmountLbl.text = String(format: "$%0.2f", tipCalcBrains.tipAmount)
-    }
-    
-    func tipPercentValue() {
-        tipPercentageLbl.text = "Tip: \(Int(tipPercentageSlider.value*100))%"
-    }
-    
-    func updateSplitUI() {
-        tipCalcBrains.numberOfPeople = Int(numberOfPeopleSlider.value)
-        numberOfPeopleLbl.text = "People: \(Int(numberOfPeopleSlider.value))"
         splitCostLbl.text = String(format: "$%0.2f", tipCalcBrains.splitCost)
-        tipCalcBrains.calculateSplit()
+        tipPercentageLbl.text = "Tip: \(Int(tipPercentageSlider.value*100))%"
+        numberOfPeopleLbl.text = "People: \(Int(numberOfPeopleSlider.value))"
     }
-    
 }
 
