@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
     }
 
-    //does all the math to calc tip, then calc split, then updates UI
+    //does all the math to calc tip, then calc split, then updates UI. tipCalcBrains here is all my variable which has the functions built in because of its class
     func calculateTip() {
         tipCalcBrains.tipPercent = Double(floor(tipPercentageSlider.value*100)/100)
         tipCalcBrains.billAmount = ((enterBillTF.text)! as NSString).doubleValue
