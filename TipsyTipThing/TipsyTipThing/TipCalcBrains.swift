@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Darwin
+let dmax = DBL_MAX
 
 class TipCalcBrains {
     //data encapsulation eg. hidden data
@@ -61,11 +63,14 @@ class TipCalcBrains {
     }
     
    init(billAmount: Double, tipPercent: Double, numberOfPeople: Int) {
+    //in progress attempting to guard against asshats entering inf #s and trying to run
+    //guard billAmount < dmax else {
+      //  return}
         self._billAmount = billAmount
         self._tipPercent = tipPercent
         self._numberOfPeople = numberOfPeople
+        
     }
-    
     func calculateTip() {
         _tipAmount = billAmount * tipPercent
         _totalAmount = tipAmount + billAmount
