@@ -14,46 +14,50 @@ class ViewController: UIViewController {
     var skys = [UIImageView]()
     var suns = [UIImageView]()
     var contentWidth: CGFloat = 0.0
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView1: UIScrollView!
+    //@IBOutlet weak var scrollView2: UIScrollView!
+    //@IBOutlet weak var scrollView3: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         for x in 0...2{
-            let image = UIImage(named: "icon\(x).png")
-            let imageView = UIImageView(image: image)
-            icons.append(imageView)
             let background = UIImage(named: "sky\(x)")
             let imageViewBackground = UIImageView(image: background)
             skys.append(imageViewBackground)
-            let sphere = UIImage(named: "sun\(x)")
-            let imageViewSun = UIImageView(image: sphere)
-            suns.append(imageViewSun)
-            
             var mobileOrigin: CGFloat = 0.0
-            var newX: CGFloat = 0.0
-            var moveTheSun: CGFloat = 0.0
-            
-            moveTheSun = view.frame.size.width * CGFloat(x)
-            print(moveTheSun)
-            newX = view.frame.midX + view.frame.size.width * CGFloat(x)
             mobileOrigin = view.frame.size.width * CGFloat(x)
-            
-            contentWidth += newX
-            scrollView.addSubview(imageView)
-            scrollView.addSubview(imageViewBackground)
-            scrollView.addSubview(imageViewSun)
-            
-            
+            scrollView1.addSubview(imageViewBackground)
             imageViewBackground.frame = CGRect(x:mobileOrigin,y:0,width:view.frame.size.width,height:view.frame.size.height)
-            imageViewSun.frame = CGRect(x:moveTheSun, y:20, width:100, height:100)
-            imageView.frame = CGRect(x:newX-75, y:(view.frame.size.height/2)-75, width:150, height:150)
-            
             }
         
+        //icons
+        //for x in 0...2 {
+          //  let image = UIImage(named: "icon\(x).png")
+            //let imageView = UIImageView(image: image)
+            //icons.append(imageView)
+            //var newX: CGFloat = 0.0
+            //newX = view.frame.midX + view.frame.size.width * CGFloat(x)
+            //contentWidth += newX
+            //scrollView2.addSubview(imageView)
+            //imageView.frame = CGRect(x:newX-75, y:(view.frame.size.height/2)-75, width:150, height:150)
+            //}
         
+        //suns
+        //for x in 0...2 {
+            //let sphere = UIImage(named: "sun\(x)")
+            //let imageViewSun = UIImageView(image: sphere)
+            //suns.append(imageViewSun)
+            //var moveTheSun: CGFloat = 0.0
+            //moveTheSun = view.frame.size.width * CGFloat(x)
+            //print(moveTheSun)
+            //scrollView3.addSubview(imageViewSun)
+            //imageViewSun.frame = CGRect(x: moveTheSun, y:20, width:100, height:100)
+       // }
         
-            scrollView.contentSize = CGSize(width:contentWidth, height: view.frame.size.height)
+            scrollView1.contentSize = CGSize(width:contentWidth, height: view.frame.size.height)
+            //scrollView2.contentSize = CGSize(width:contentWidth, height: view.frame.size.height)
+            //scrollView3.contentSize = CGSize(width:contentWidth, height: view.frame.size.height)
     }
 }
 
