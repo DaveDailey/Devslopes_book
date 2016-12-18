@@ -13,7 +13,18 @@
 		CEAACA051E002BBB005B1E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAACA041E002BBB005B1E16 /* Assets.xcassets */; };
 		CEAACA081E002BBB005B1E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAACA061E002BBB005B1E16 /* LaunchScreen.storyboard */; };
 		CEAACA121E003AAB005B1E16 /* TipCalcBrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAACA111E003AAB005B1E16 /* TipCalcBrains.swift */; };
+		CEBCE53C1E06D81F008886D0 /* TipsyTipThingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE53B1E06D81F008886D0 /* TipsyTipThingTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEBCE53E1E06D81F008886D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEAAC9F21E002BBB005B1E16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAAC9F91E002BBB005B1E16;
+			remoteInfo = TipsyTipThing;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CEAAC9FA1E002BBB005B1E16 /* TipsyTipThing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipsyTipThing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		CEAACA071E002BBB005B1E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAACA091E002BBB005B1E16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAACA111E003AAB005B1E16 /* TipCalcBrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalcBrains.swift; sourceTree = "<group>"; };
+		CEBCE5391E06D81F008886D0 /* TipsyTipThingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTipThingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBCE53B1E06D81F008886D0 /* TipsyTipThingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyTipThingTests.swift; sourceTree = "<group>"; };
+		CEBCE53D1E06D81F008886D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEAAC9F71E002BBB005B1E16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBCE5361E06D81F008886D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAAC9FC1E002BBB005B1E16 /* TipsyTipThing */,
+				CEBCE53A1E06D81F008886D0 /* TipsyTipThingTests */,
 				CEAAC9FB1E002BBB005B1E16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CEAAC9FA1E002BBB005B1E16 /* TipsyTipThing.app */,
+				CEBCE5391E06D81F008886D0 /* TipsyTipThingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +106,15 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		CEBCE53A1E06D81F008886D0 /* TipsyTipThingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBCE53B1E06D81F008886D0 /* TipsyTipThingTests.swift */,
+				CEBCE53D1E06D81F008886D0 /* Info.plist */,
+			);
+			path = TipsyTipThingTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +135,24 @@
 			productReference = CEAAC9FA1E002BBB005B1E16 /* TipsyTipThing.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CEBCE5381E06D81F008886D0 /* TipsyTipThingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBCE5421E06D81F008886D0 /* Build configuration list for PBXNativeTarget "TipsyTipThingTests" */;
+			buildPhases = (
+				CEBCE5351E06D81F008886D0 /* Sources */,
+				CEBCE5361E06D81F008886D0 /* Frameworks */,
+				CEBCE5371E06D81F008886D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBCE53F1E06D81F008886D0 /* PBXTargetDependency */,
+			);
+			name = TipsyTipThingTests;
+			productName = TipsyTipThingTests;
+			productReference = CEBCE5391E06D81F008886D0 /* TipsyTipThingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -117,6 +167,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9W8PVJFZ7X;
 						ProvisioningStyle = Automatic;
+					};
+					CEBCE5381E06D81F008886D0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEAAC9F91E002BBB005B1E16;
 					};
 				};
 			};
@@ -134,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				CEAAC9F91E002BBB005B1E16 /* TipsyTipThing */,
+				CEBCE5381E06D81F008886D0 /* TipsyTipThingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +202,13 @@
 				CEAACA081E002BBB005B1E16 /* LaunchScreen.storyboard in Resources */,
 				CEAACA051E002BBB005B1E16 /* Assets.xcassets in Resources */,
 				CEAACA031E002BBB005B1E16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBCE5371E06D81F008886D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +225,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEBCE5351E06D81F008886D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBCE53C1E06D81F008886D0 /* TipsyTipThingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEBCE53F1E06D81F008886D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEAAC9F91E002BBB005B1E16 /* TipsyTipThing */;
+			targetProxy = CEBCE53E1E06D81F008886D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEAACA011E002BBB005B1E16 /* Main.storyboard */ = {
@@ -305,6 +384,32 @@
 			};
 			name = Release;
 		};
+		CEBCE5401E06D81F008886D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TipsyTipThingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davedailey.TipsyTipThingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipsyTipThing.app/TipsyTipThing";
+			};
+			name = Debug;
+		};
+		CEBCE5411E06D81F008886D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TipsyTipThingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davedailey.TipsyTipThingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipsyTipThing.app/TipsyTipThing";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +430,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CEBCE5421E06D81F008886D0 /* Build configuration list for PBXNativeTarget "TipsyTipThingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBCE5401E06D81F008886D0 /* Debug */,
+				CEBCE5411E06D81F008886D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
