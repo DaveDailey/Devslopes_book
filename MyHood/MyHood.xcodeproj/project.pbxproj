@@ -13,6 +13,7 @@
 		CEBCE5751E06E9A3008886D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE5741E06E9A3008886D0 /* Assets.xcassets */; };
 		CEBCE5781E06E9A3008886D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE5761E06E9A3008886D0 /* LaunchScreen.storyboard */; };
 		CEBCE5811E06EA28008886D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE5801E06EA28008886D0 /* Post.swift */; };
+		CEFA640B1E081F590038D535 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA640A1E081F590038D535 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CEBCE5771E06E9A3008886D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEBCE5791E06E9A3008886D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEBCE5801E06EA28008886D0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CEFA640A1E081F590038D535 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		CEBCE56C1E06E9A3008886D0 /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				CEFA64091E081F220038D535 /* View */,
 				CEBCE57F1E06EA0A008886D0 /* Model */,
 				CEBCE56D1E06E9A3008886D0 /* AppDelegate.swift */,
 				CEBCE56F1E06E9A3008886D0 /* ViewController.swift */,
@@ -73,6 +76,14 @@
 				CEBCE5801E06EA28008886D0 /* Post.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		CEFA64091E081F220038D535 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA640A1E081F590038D535 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				CEBCE5811E06EA28008886D0 /* Post.swift in Sources */,
 				CEBCE5701E06E9A3008886D0 /* ViewController.swift in Sources */,
 				CEBCE56E1E06E9A3008886D0 /* AppDelegate.swift in Sources */,
+				CEFA640B1E081F590038D535 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +324,7 @@
 				CEBCE57E1E06E9A3008886D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
