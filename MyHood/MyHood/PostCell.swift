@@ -17,12 +17,13 @@ class PostCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        postImg.layer.cornerRadius = 15
     }
     
     func configureCell(_ post:Post){
         titleLbl.text = post.title
         descLbl.text = post.postDesc
+        postImg.image = DataService.instance.imageForPath(post.imagePath)
     }
     
 
