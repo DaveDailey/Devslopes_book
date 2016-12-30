@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE8497C11E09715D00ABDF08 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8497C01E09715D00ABDF08 /* AddPostVC.swift */; };
 		CE8497C41E09843100ABDF08 /* Data Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8497C31E09843100ABDF08 /* Data Services.swift */; };
+		CE8497C61E16FB1000ABDF08 /* viewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8497C51E16FB1000ABDF08 /* viewPostVC.swift */; };
 		CEBCE56E1E06E9A3008886D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE56D1E06E9A3008886D0 /* AppDelegate.swift */; };
 		CEBCE5701E06E9A3008886D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBCE56F1E06E9A3008886D0 /* ViewController.swift */; };
 		CEBCE5731E06E9A3008886D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEBCE5711E06E9A3008886D0 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		CE8497C01E09715D00ABDF08 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 		CE8497C31E09843100ABDF08 /* Data Services.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Services.swift"; sourceTree = "<group>"; };
+		CE8497C51E16FB1000ABDF08 /* viewPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewPostVC.swift; sourceTree = "<group>"; };
 		CEBCE56A1E06E9A3008886D0 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBCE56D1E06E9A3008886D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBCE56F1E06E9A3008886D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				CE8497C01E09715D00ABDF08 /* AddPostVC.swift */,
+				CE8497C51E16FB1000ABDF08 /* viewPostVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				CE8497C11E09715D00ABDF08 /* AddPostVC.swift in Sources */,
 				CEBCE56E1E06E9A3008886D0 /* AppDelegate.swift in Sources */,
 				CE8497C41E09843100ABDF08 /* Data Services.swift in Sources */,
+				CE8497C61E16FB1000ABDF08 /* viewPostVC.swift in Sources */,
 				CEFA640B1E081F590038D535 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

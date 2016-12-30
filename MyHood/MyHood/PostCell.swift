@@ -14,7 +14,6 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var descLbl: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         postImg.layer.cornerRadius = 15
@@ -25,8 +24,4 @@ class PostCell: UITableViewCell {
         descLbl.text = post.postDesc
         postImg.image = DataService.instance.imageForPath(post.imagePath)
     }
-    
-
-    
-
 }

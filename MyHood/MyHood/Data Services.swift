@@ -49,8 +49,9 @@ class DataService {
         return image
     }
     
+//allows addPostVC to pass in new post then saves and reloads UITableView
     func addPost(post:Post){
-        _loadedPosts.append(post)
+        _loadedPosts.insert(post, at: 0)
         savePosts()
         loadPosts()
     }

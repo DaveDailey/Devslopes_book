@@ -38,7 +38,7 @@ class Post: NSObject, NSCoding {
         aCoder.encode(self._imagePath, forKey: "imagePath")
         aCoder.encode(self._postDesc, forKey: "description")
         aCoder.encode(self._title, forKey: "title")
-    }
+   }
     
     required convenience init?(coder aDecoder: NSCoder) {
         self.init()

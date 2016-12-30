@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onPostsLoaded(_:)), name: NSNotification.Name(rawValue: "postsLoaded"), object: nil)
     }
 
-    
+//By making this function fluid we are saying for each cell that we can see run this function. cell.configureCell is the function we declare in PostCell.swift to ident the formating. We are able to access it because we are casting constant cell as PostCell giving it the function. withIdentifier is providing a string name for any cell that is not on screen to be reused.
     func tableView(_ tableView:UITableView, cellForRowAt indexPath: IndexPath) ->UITableViewCell {
         let post = DataService.instance.loadedPosts[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
