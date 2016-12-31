@@ -10,6 +10,7 @@ import Foundation
 
 
 class Post: NSObject, NSCoding {
+    
     fileprivate var _imagePath: String!
     fileprivate var _title: String!
     fileprivate var _postDesc: String!
@@ -31,7 +32,6 @@ class Post: NSObject, NSCoding {
     }
     
     override init() {
-        
     }
     
     func encode(with aCoder: NSCoder) {
@@ -46,7 +46,4 @@ class Post: NSObject, NSCoding {
         self._title = aDecoder.decodeObject(forKey: "title") as? String
         self._postDesc = aDecoder.decodeObject(forKey: "description") as? String
     }
-    
-    
-    
 }

@@ -16,10 +16,10 @@ class DataService {
     private var _loadedPosts = [Post]()
     
     var loadedPosts: [Post] {
-        return _loadedPosts
+       return _loadedPosts
     }
-    
-    func savePosts(){
+   
+    func savePosts() {
         let postsData = NSKeyedArchiver.archivedData(withRootObject: _loadedPosts)
         UserDefaults.standard.set(postsData, forKey: "posts")
         UserDefaults.standard.synchronize()
@@ -49,11 +49,17 @@ class DataService {
         return image
     }
     
-//allows addPostVC to pass in new post then saves and reloads UITableView
+//allows addPostVC to pass in new post then saves data to UserDefaults and reloads UITableView
     func addPost(post:Post){
         _loadedPosts.insert(post, at: 0)
         savePosts()
         loadPosts()
+    }
+    
+//allows post removal from memory and from UITableView, didnt add loadPosts() in order to have animation on ViewController
+    func removePosts(post:Int){
+        _loadedPosts.remove(at: post)
+        savePosts()
     }
     
     func documentsPathForFileName(_ name: String) -> String {

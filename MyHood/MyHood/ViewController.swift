@@ -27,7 +27,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.configureCell(post)
             return cell
         }
-        
         return PostCell()
     }
     
@@ -35,10 +34,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return DataService.instance.loadedPosts.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segueOne", sender: DataService.instance.loadedPosts[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueOne" {
+        let guest = segue.destination as! viewPostVC
+        guest.postToView = sender as! Post
+        }
+    }
+    
+//deletes row using function in dataService, instead of reloading table i chose to animate the row being deleted
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            DataService.instance.removePosts(post: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     func onPostsLoaded(_ notif: AnyObject) {
         tableView.reloadData()
     }
-
-
 }
 

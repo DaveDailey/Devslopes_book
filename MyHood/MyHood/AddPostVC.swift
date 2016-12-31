@@ -25,7 +25,6 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var descField: UITextField!
     var imagePicker: UIImagePickerController!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         postImage.layer.cornerRadius = 20
@@ -37,7 +36,6 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBAction func addPicBtnPressed(_ sender: UIButton) {
         sender.setTitle("", for: .normal)
         present(imagePicker, animated:true, completion:nil)
-        
     }
     
     @IBAction func makePostBtnPressed(_ sender: UIButton) {
