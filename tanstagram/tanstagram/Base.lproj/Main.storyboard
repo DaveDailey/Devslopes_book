@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tanstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add_drawing_btn" translatesAutoresizingMaskIntoConstraints="NO" id="8NX-0Y-sQv">
+                                <rect key="frame" x="16" y="28" width="71" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add_text_btn" translatesAutoresizingMaskIntoConstraints="NO" id="qgX-Il-zY0">
+                                <rect key="frame" x="165" y="337" width="71" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add_drawing_btn" translatesAutoresizingMaskIntoConstraints="NO" id="6eG-C8-EPv">
+                                <rect key="frame" x="16" y="396" width="120" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addsnaptostory" translatesAutoresizingMaskIntoConstraints="NO" id="hUo-Bu-0Lw">
+                                <rect key="frame" x="261" y="212" width="71" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addphoto_btn" translatesAutoresizingMaskIntoConstraints="NO" id="xBK-AE-u6M">
+                                <rect key="frame" x="54" y="166" width="71" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add_text_btn" translatesAutoresizingMaskIntoConstraints="NO" id="ouB-sU-8vl">
+                                <rect key="frame" x="152" y="38" width="71" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addsnaptostory" translatesAutoresizingMaskIntoConstraints="NO" id="afO-so-KAA">
+                                <rect key="frame" x="192" y="430" width="111" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outletCollection property="Images" destination="ouB-sU-8vl" collectionClass="NSMutableArray" id="P2y-Fo-TpZ"/>
+                        <outletCollection property="Images" destination="8NX-0Y-sQv" collectionClass="NSMutableArray" id="eAu-7r-qya"/>
+                        <outletCollection property="Images" destination="hUo-Bu-0Lw" collectionClass="NSMutableArray" id="djJ-Bi-TM6"/>
+                        <outletCollection property="Images" destination="xBK-AE-u6M" collectionClass="NSMutableArray" id="Uk4-4S-fvK"/>
+                        <outletCollection property="Images" destination="qgX-Il-zY0" collectionClass="NSMutableArray" id="4Of-zw-lp2"/>
+                        <outletCollection property="Images" destination="afO-so-KAA" collectionClass="NSMutableArray" id="G5R-t8-n8e"/>
+                        <outletCollection property="Images" destination="6eG-C8-EPv" collectionClass="NSMutableArray" id="DV7-TR-l9E"/>
+                        <outletCollection property="images" destination="hUo-Bu-0Lw" collectionClass="NSMutableArray" id="5wD-gs-rJZ"/>
+                        <outletCollection property="images" destination="ouB-sU-8vl" collectionClass="NSMutableArray" id="rNi-zR-KpB"/>
+                        <outletCollection property="images" destination="8NX-0Y-sQv" collectionClass="NSMutableArray" id="taM-qC-Nqr"/>
+                        <outletCollection property="images" destination="xBK-AE-u6M" collectionClass="NSMutableArray" id="alR-S9-MxS"/>
+                        <outletCollection property="images" destination="6eG-C8-EPv" collectionClass="NSMutableArray" id="J67-Ok-Lch"/>
+                        <outletCollection property="images" destination="qgX-Il-zY0" collectionClass="NSMutableArray" id="GsK-k2-dq8"/>
+                        <outletCollection property="images" destination="afO-so-KAA" collectionClass="NSMutableArray" id="kAo-Zo-oXP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add_drawing_btn" width="22" height="23"/>
+        <image name="add_text_btn" width="21" height="22"/>
+        <image name="addphoto_btn" width="15" height="15"/>
+        <image name="addsnaptostory" width="26" height="26"/>
+    </resources>
 </document>
