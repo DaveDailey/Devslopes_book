@@ -49,10 +49,26 @@
                                 <rect key="frame" x="192" y="430" width="111" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="savePhotosButton" translatesAutoresizingMaskIntoConstraints="NO" id="iz8-Sd-2Je">
+                                <rect key="frame" x="135" y="539" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="UMu-Yw-Hrj"/>
+                                    <constraint firstAttribute="width" constant="240" id="lf3-71-BcJ"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="fE3-7N-Xwa" appends="YES" id="6kf-Tf-TkK"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iz8-Sd-2Je" secondAttribute="trailing" id="jsN-xU-yaJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iz8-Sd-2Je" secondAttribute="bottom" id="oqQ-Nd-smq"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="savePhotoButton" destination="iz8-Sd-2Je" id="F2y-9f-l2N"/>
                         <outletCollection property="Images" destination="ouB-sU-8vl" collectionClass="NSMutableArray" id="P2y-Fo-TpZ"/>
                         <outletCollection property="Images" destination="8NX-0Y-sQv" collectionClass="NSMutableArray" id="eAu-7r-qya"/>
                         <outletCollection property="Images" destination="hUo-Bu-0Lw" collectionClass="NSMutableArray" id="djJ-Bi-TM6"/>
@@ -70,6 +86,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fE3-7N-Xwa">
+                    <connections>
+                        <action selector="saveToPhotosTapGesture:" destination="BYZ-38-t0r" id="uNK-25-2u7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
         </scene>
@@ -79,5 +100,6 @@
         <image name="add_text_btn" width="21" height="22"/>
         <image name="addphoto_btn" width="15" height="15"/>
         <image name="addsnaptostory" width="26" height="26"/>
+        <image name="savePhotosButton" width="346" height="54"/>
     </resources>
 </document>

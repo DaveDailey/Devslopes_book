@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet var images: [UIImageView]!
+    @IBOutlet weak var savePhotoButton: UIImageView!
     
     func pinchGesture (imageView: UIImageView) -> UIPinchGestureRecognizer {
         return UIPinchGestureRecognizer(target: self, action: #selector(ViewController.handlePinch))
@@ -33,7 +34,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         sender.setTranslation(CGPoint.zero, in: self.view)
     }
-    
     func handleRotation(sender: UIRotationGestureRecognizer) {
         sender.view?.transform = (sender.view?.transform)!.rotated(by: sender.rotation)
         sender.rotation = 0
@@ -54,6 +54,32 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         super.viewDidLoad()
         createGesture()
     }
+    
+    @IBAction func saveToPhotosTapGesture(_ sender: UITapGestureRecognizer) {
+        renderImage()
+    }
+    
+    func image (_ image: UIImage, didFinishSavingWithError error:Error?, contextInfo: UnsafeRawPointer){
+        if let error = error {
+            //we got back an error
+            let alert = UIAlertController(title: "Save error", message: error.localizedDescription, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "ok", style: .default))
+            present(alert, animated:true)
+        } else {
+            let alert = UIAlertController(title: "Saved!", message: "Your image has been saved to your photos.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style:.default))
+            present(alert, animated:true)
+        }
+    }
 
+    func renderImage() {
+        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+        let image = renderer.image {(goTo) in
+            view.drawHierarchy(in:view.bounds, afterScreenUpdates: true)
+        }
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
+    }
+  
+    
 }
 
